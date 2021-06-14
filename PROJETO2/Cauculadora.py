@@ -1,29 +1,35 @@
 # Perguntar para o usuario qual operaçao deseja fazer 
 # Pedir os dois numeros da operaçao 
 # Fazer a operaçao
-# mo
 # mostrar o resultado na tela 
-print("- + / *:")
-operacao = input("which operation do you want to do:")
-A =  int(input('fist number:'))
-B =  int(input('Second number:'))
+while True:
+ print("- + / *:")
+ #print("caso nao desejar fazer nem uma operacao digite \'Sair\':") 
+ operacao = input("Qual operaçao deseja fazer? se nem uma digite \'sair\':")
+ if operacao == 'sair':    
+   break
 
-if operacao == '+':
+ elif operacao == '+' or operacao == '-' or operacao == '/' or operacao == '*':
+  A =  int(input('primeiro numero:'))
+  B =  int(input('segundo numero:'))
+ else:
+     print('fim:')
+   
+ if operacao == '+':
    Total = A + B
    print(Total)
  
-elif operacao == '/':
+ elif operacao == '/':
    Total = A / B
    print(Total)
 
-elif opercao == '-':
+ elif operacao == '-':
    Total = A - B
    print(Total)
 
-elif operacao == '*':  
+ elif operacao == '*':  
   Total = A * B
   print(Total)
 
-else:
-    print('operaçao invalida')
+ 
  
