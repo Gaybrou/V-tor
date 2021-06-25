@@ -2,11 +2,12 @@
 # Pedir os dois numeros da operaçao 
 # Fazer a operaçao
 # mostrar o resultado na tela 
+from abc import ABC
+
 while True:
- print("- + / *:")
- #print("caso nao desejar fazer nem uma operacao digite \'Sair\':") 
- operacao = input("Qual operaçao deseja fazer? se nem uma digite \'sair\':")
- if operacao == 'sair':    
+ print("Qual operaçao você deseja fazer (- + / *):")
+ operacao = input("Se nem uma digete (g) para sair:")
+ if operacao == 'g':    
    break
 
  elif operacao == '+' or operacao == '-' or operacao == '/' or operacao == '*':
@@ -30,6 +31,7 @@ while True:
  elif operacao == '*':  
   Total = A * B
   print(Total)
+
 
  
  
