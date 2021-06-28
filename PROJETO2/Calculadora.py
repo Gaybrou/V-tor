@@ -14,7 +14,7 @@ while True:
   A =  int(input('primeiro numero:'))
   B =  int(input('segundo numero:'))
  else:
-     print('fim:')
+     print('fiM:')
    
  if operacao == '+':
    Total = A + B
